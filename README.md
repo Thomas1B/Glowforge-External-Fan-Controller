@@ -20,7 +20,7 @@ Also needed is some arduino board to program the attiny85.
 
 DigiKey (https://www.digikey.ca/) is a great place to buy electronics from.
 
-The attiny85 is very small microcontroller, convienent for simple projects. The AC relay is used to run an external exhaust fan when the controller senses high voltage. The red led is used to notify that the controller has power, and the green is show that relay shoud be running (which is useful for debugging if the fan should be run and it's not). The button is used a reset and the switch is used to manually active the relay.
+The attiny85 is very small microcontroller, convienent for simple projects. The AC relay is used to run an external exhaust fan when the controller senses high voltage. The red led is used to notify that the controller has power, and the green is show that relay should be running (which is useful for debugging if the fan should be run and it's not). The button is used a reset and the switch is used to manually active the relay.
 
 ## Diagrams
  more to come!
