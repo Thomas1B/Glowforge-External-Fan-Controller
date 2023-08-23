@@ -3,19 +3,24 @@ This program is designed using an ATTiny85 to sense voltage is high on the
 glowforge laser cutter fan pin. If it is high, then using a relay turn on a fan for an exhaust.
 */
 
+// ******************* Variables user can change *******************
+// Note: depending on pins used, digitalRead and analogRead may have to be switch in the lower functions...
 
-// Defining pins
-const int powerState_led_pin = 1;  // green led.
-const int fan_pin = 0;             // connected to fan pin on glowforge.
-const int relay_pin = 4;
+// Defining pins: (see Datasheet for pinouts: https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)
+const int powerState_led_pin = 1;  // Led to nofity about power state (green led).
+const int fan_pin = 0;             // trigger pin externally connected top fan pin on Glowforge.
+const int relay_pin = 4;           // pin to power relay.
+
+// extra time to run the fan after the voltage drops back to 0.
+// this is not exact time due to run time of the program.
+const int extra_run_time = (1000 / 1) * 30;  // (1000 millis / 1secs) * x secs  = y secs
+
+
+// ******************* DO NOT CHANGE ANYTHING PAST HERE *******************
 
 // Global variables
 bool relay_state = false;          // if relay is on or off.
 unsigned long last_high_time = 0;  // last time voltage was high.
-
-// extra time to run the fan after the voltage drops back to 0.
-// this is not exact time due to run time.
-const int extra_run_time = 1000 * 30;
 
 // Other variables
 unsigned long TimeOfLastDebounce = 0;
