@@ -35,7 +35,7 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 3.8,
+          "height": 1.5,
           "width": 2.0
         },
         "silk_line_width": 0.15,
@@ -56,7 +56,7 @@
         }
       ],
       "drc_exclusions": [
-        "unconnected_items|126746000|96649000|2c2d67ac-42e4-46ef-97b4-8434e381ef5a|ca496712-d189-4d9e-8fbd-1435b84f6f9b"
+        "unconnected_items|118872000|88290000|fa8c277f-03a5-4166-8b31-d20d1c53b33d|169c79f1-cf3c-4a25-beac-3b1b43816081"
       ],
       "meta": {
         "version": 2
@@ -74,7 +74,7 @@
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -86,12 +86,12 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "warning",
         "missing_footprint": "warning",
         "net_conflict": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "warning",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -106,7 +106,7 @@
         "track_dangling": "warning",
         "track_width": "error",
         "tracks_crossing": "error",
-        "unconnected_items": "error",
+        "unconnected_items": "warning",
         "unresolved_variable": "error",
         "via_dangling": "warning",
         "zones_intersect": "error"
@@ -176,6 +176,7 @@
       "track_widths": [
         0.0,
         0.381,
+        0.508,
         0.762,
         1.27
       ],
@@ -195,13 +196,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "pin_to_pin|1545590|995680|b32b3108-b4c9-47ad-966e-0d939b893dc8|f9127963-67a9-4bc7-83b2-ccc80f280605|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0",
-      "pin_to_pin|1545590|995680|d3eda11c-69d6-4526-9da8-6bc52b477860|e9896db2-3927-42cc-aebc-f1ee8f9cb359|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0",
-      "pin_to_pin|1545590|995680|dfdad5b3-6e00-424a-a77f-01884dd158e1|88203ab1-7056-4906-825d-d7087f2502bd|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0",
-      "pin_to_pin|1815469|1142565|f9127963-67a9-4bc7-83b2-ccc80f280605|b32b3108-b4c9-47ad-966e-0d939b893dc8|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0",
-      "pin_to_pin|1819904|1143000|f9127963-67a9-4bc7-83b2-ccc80f280605|b32b3108-b4c9-47ad-966e-0d939b893dc8|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0|/8a62be07-884f-4ad1-9158-f35c6eb858f0"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -416,7 +411,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Fan Controller.kicad_pro",
+    "filename": "Controller Board.kicad_pro",
     "version": 1
   },
   "net_settings": {

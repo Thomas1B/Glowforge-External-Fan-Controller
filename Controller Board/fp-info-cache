@@ -1,4 +1,4 @@
-21998738061099542
+22000465243117671
 000_Thomas_Footprints
 7443551331(inductor)
 
@@ -90,6 +90,13 @@ Dfplayer
 0
 6
 6
+000_Thomas_Footprints
+Diode-SOD-80
+
+
+0
+2
+2
 000_Thomas_Footprints
 EG1218 Slide Switch
 
@@ -259,14 +266,14 @@ Through hole pin header THT 2x20 2.54mm double row
 86
 43
 000_Thomas_Footprints
-RPi_Pico_TH
-Through hole straight pin header, 2x20, 2.54mm pitch, double rows
-Through hole pin header THT 2x20 2.54mm double row
-0
-86
-43
-000_Thomas_Footprints
 Rotary Encoder
+
+
+0
+7
+6
+000_Thomas_Footprints
+Rotary Encoder - PEC11R
 
 
 0
