@@ -1,19 +1,20 @@
 /* 
-This program is designed using an ATTiny85 to sense voltage is high on the
-glowforge laser cutter fan pin. If it is high, then using a relay turn on a fan for an exhaust.
+This program is designed using an ATTiny85 to sense when voltage is high on the
+glowforge laser cutter fan pin. If it is high, then using a relay an external exhaust fan will turn on.
+
 */
 
 // ******************* Variables user can change *******************
-// Note: depending on pins used, digitalRead and analogRead may have to be switch in the lower functions...
+// Note: depending on pins used, digitalRead and analogRead may have to be switch in the lower functions, recommend not to change.
 
 // Defining pins: (see Datasheet for pinouts: https://ww1.microchip.com/downloads/en/devicedoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf)
 const int powerState_led_pin = 1;  // Led to nofity about power state (green led).
-const int fan_pin = 0;             // trigger pin externally connected top fan pin on Glowforge.
+const int fan_pin = 3;             // trigger pin externally connected top fan pin on Glowforge.
 const int relay_pin = 4;           // pin to power relay.
 
 // extra time to run the fan after the voltage drops back to 0.
 // this is not exact time due to run time of the program.
-const int extra_run_time = (1000 / 1) * 30;  // (1000 millis / 1secs) * x secs  = y secs
+const int extra_run_time = (1000 / 1) * 30;  // (1000 millis / 1 secs) * X secs
 
 
 // ******************* DO NOT CHANGE ANYTHING PAST HERE *******************
@@ -84,7 +85,13 @@ void loop() {
 
   if ((millis() - TimeOfLastDebounce) > DebounceTime) {  // if statement for debouncing.
 
-    bool power_state = digitalRead(fan_pin);  // reading fan pin on the glowforge.
+    bool power_state = false;
+
+    float voltage = analogRead(fan_pin);  // reading fan pin on the glowforge.
+    voltage *= (5.0 / 1023.0);            // mapping voltage
+    if (voltage >= 3.0) {
+      power_state = true;
+    }
 
     if (power_state) {  // if power state is high:
       if (!relay_state) {
