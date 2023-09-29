@@ -1,0 +1,57 @@
+"Project:","Controller Board\Controller Board.kicad_sch"
+"Date:","9/28/2023"
+"Tool:","Eeschema 7.0.6"
+"BOM Generator:","myScripts\myKiCad_BOM_Maker.py"
+
+"Total Component Count:","18"
+"Component Type Count:","16"
+"Ref","Qnty","Value","Description","Cmp name","Footprint"
+
+"Component: 1/16:"
+"C1","1","10uF","Unpolarized capacitor","C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+
+"Component: 2/16:"
+"C2","1","22uF","Unpolarized capacitor","C","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+
+"Component: 3/16:"
+"D1","1","Green LED","Light emitting diode","LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+
+"Component: 4/16:"
+"D2","1","D","Diode","D","0_Thomas_Footprints:Diode-SOD-80"
+
+"Component: 5/16:"
+"D3","1","Red LED","Light emitting diode","LED","LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+
+"Component: 6/16:"
+"H1, H2","2","MountingHole","Mounting Hole without connection","MountingHole","MountingHole:MountingHole_3.2mm_M3"
+
+"Component: 7/16:"
+"J1","1","Fan_connector","Generic connector, single row, 01x02","Conn_01x02","0_Thomas_Footprints:myTerminalBlock-2_P5.08mm"
+
+"Component: 8/16:"
+"J2","1","Conn_01x04","Generic connector, single row, 01x04","Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+
+"Component: 9/16:"
+"J3","1","Conn_01x03","Generic connector, single row, 01x03","Conn_01x03","Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+
+"Component: 10/16:"
+"K1","1","AQG22105","SS Relay, 5V trig, 250AC 2A","AQG22105 Relay","0_Thomas_Footprints:RELAY_AQG22105"
+
+"Component: 11/16:"
+"R1","1","10K","Resistor","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+
+"Component: 12/16:"
+"R2, R3","2","2K","Resistor","R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+
+"Component: 13/16:"
+"RST1","1","SW_Push","Push button switch, generic, two pins","SW_Push","0_Thomas_Footprints:SW_PTS636_SM43J_SMTR_LFS"
+
+"Component: 14/16:"
+"SW1","1","SW_SPDT","Switch, single pole double throw","SW_SPDT","0_Thomas_Footprints:EG1218 Slide Switch"
+
+"Component: 15/16:"
+"U1","1","attiny85","ATtiny85","ATTINY85","Package_DIP:DIP-8_W7.62mm"
+
+"Component: 16/16:"
+"U2","1","AMS1117-5.0","1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223","AMS1117-5.0","Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+
