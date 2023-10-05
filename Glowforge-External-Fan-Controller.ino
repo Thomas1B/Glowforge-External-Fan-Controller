@@ -14,7 +14,7 @@ const int relay_pin = 4;           // pin to power relay.
 
 // extra time to run the fan after the voltage drops back to 0.
 // this is not exact time due to run time of the program.
-const int extra_run_time = (1000 / 1) * 30;  // (1000 millis / 1 secs) * X secs
+const int extra_run_time = (1000 / 1) * 15;  // (1000 millis / 1 secs) * X secs
 
 
 // ******************* DO NOT CHANGE ANYTHING PAST HERE *******************
